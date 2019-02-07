@@ -72,21 +72,6 @@
     <module>drools-test-coverage</module>
   </modules>
 
-  <dependencyManagement>
-    <!-- Important: Do not add any additional dependency versions here!
-         The dependency management should only import drools-bom and kie-third-party-bom to get the proper versions
-         it needs. Any additional 3rd party dependency versions need to go directly into kie-third-party-bom. -->
-    <dependencies>
-      <dependency>
-        <groupId>org.drools</groupId>
-        <artifactId>drools-bom</artifactId>
-        <version>${version.org.kie}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
-
   <build>
     <pluginManagement>
       <plugins>
